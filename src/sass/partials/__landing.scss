@@ -1,0 +1,10 @@
+@import './__variables';
+
+.landing {
+  min-height: 97.7vh;
+  background-image: $background-image;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}

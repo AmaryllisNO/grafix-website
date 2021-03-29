@@ -1,0 +1,13 @@
+@import './partials/_variables';
+@import './partials/_wrapper';
+@import './partials/_landing';
+
+.App {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+nav {
+  background: none;
+}
