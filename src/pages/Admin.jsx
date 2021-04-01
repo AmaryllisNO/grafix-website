@@ -1,5 +1,11 @@
+import Nav from '../components/Nav';
+
 const Admin = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Nav></Nav>
+    </div>
+  );
 };
 
 export default Admin;

@@ -1,0 +1,28 @@
+.navcontainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+  text-transform: uppercase;
+  padding: 1rem 0 1rem 0;
+
+  position: fixed;
+
+  &__linkcontainer {
+    display: inline-block;
+    margin-right: 3.5rem;
+  }
+
+  &__link {
+    color: $grafix-gray;
+    font-size: 1.2em;
+
+    &--active {
+      color: $grafix-red;
+      font-weight: bold;
+    }
+  }
+}

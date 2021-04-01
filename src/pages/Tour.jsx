@@ -1,5 +1,11 @@
+import Nav from '../components/Nav';
+
 const Tour = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Nav></Nav>
+    </div>
+  );
 };
 
 export default Tour;

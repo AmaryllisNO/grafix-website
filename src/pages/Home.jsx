@@ -7,7 +7,7 @@ const Home = () => {
       <Nav />
       <div className='landing'>
         <div className='landing__content wrapper'>
-          <img src={grafix_logo} alt='grafix logo' />
+          <img className='landing__logo' src={grafix_logo} alt='grafix logo' />
         </div>
       </div>
     </div>

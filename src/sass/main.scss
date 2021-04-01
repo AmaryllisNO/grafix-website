@@ -1,6 +1,11 @@
+// partials
 @import './partials/_variables';
 @import './partials/_wrapper';
 @import './partials/_landing';
+@import './partials/_nav';
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&display=swap');
 
 .App {
   background-color: black;
@@ -8,6 +13,21 @@
   color: white;
 }
 
-nav {
-  background: none;
+// reset styles
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
