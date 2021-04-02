@@ -1,0 +1,67 @@
+// reset styles
+
+.App {
+  color: white;
+  background-color: black;
+  height: 100vh;
+
+  // overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5em 0 0.5em 0;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  max-width: 700px;
+  font-family: 'Red Hat Display';
+}

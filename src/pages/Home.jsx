@@ -1,14 +1,15 @@
 import grafix_logo from '../assets/svg/grafix-logo.svg';
-import Nav from '../components/Nav';
+import Header from '../components/Header';
+import Release from '../components/Release';
 
 const Home = () => {
   return (
     <div className='Home landing'>
-      <Nav />
-      <div className='landing'>
-        <div className='landing__content wrapper'>
-          <img className='landing__logo' src={grafix_logo} alt='grafix logo' />
-        </div>
+      <Header />
+
+      <div className='landing__content wrapper'>
+        <img className='landing__logo' src={grafix_logo} alt='grafix logo' />
+        <Release />
       </div>
     </div>
   );

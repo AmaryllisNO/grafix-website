@@ -1,9 +1,9 @@
-import Nav from '../components/Nav';
+import Header from '../components/Header';
 
 const Contact = () => {
   return (
     <div>
-      <Nav></Nav>
+      <Header></Header>
     </div>
   );
 };

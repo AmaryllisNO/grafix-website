@@ -1,0 +1,55 @@
+.release {
+  max-width: 800px;
+
+  &__heading {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  &__date {
+    display: inline;
+    margin-left: 1em;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 15em auto;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 15% auto 15%;
+  }
+
+  &__text {
+    max-width: 470px;
+    color: $grafix-gray;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+  }
+
+  &__button {
+    display: block;
+    padding: 0.46em 0 0.46em 0;
+    max-width: 100px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $grafix-red;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .release {
+    &__image {
+      width: 220px;
+    }
+  }
+}
