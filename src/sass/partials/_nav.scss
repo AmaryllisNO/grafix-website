@@ -1,9 +1,9 @@
 .header {
   width: 100%;
-  background-color: rgb(43, 43, 43);
 }
 
 .nav {
+  padding-top: 1em;
   transition: 0.5s;
   &__list {
     &item {
@@ -18,10 +18,20 @@
   &__link {
     color: $grafix-gray;
     font-weight: medium;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      color: gray;
+    }
 
     &--active {
       color: $grafix-red;
       font-weight: bold;
+
+      &:hover {
+        color: $grafix-red;
+      }
     }
   }
 }

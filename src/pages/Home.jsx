@@ -3,6 +3,9 @@ import Header from '../components/Header';
 import Release from '../components/Release';
 
 const Home = () => {
+  document.title = 'Grafix';
+
+  console.log(document);
   return (
     <div className='Home landing'>
       <Header />
