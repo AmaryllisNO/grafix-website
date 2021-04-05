@@ -1,6 +1,8 @@
 .release {
   max-width: 800px;
 
+  animation: fade 4s ease;
+
   &__heading {
     text-transform: uppercase;
     display: inline-block;
@@ -28,6 +30,10 @@
     letter-spacing: 0.03em;
   }
 
+  &__image {
+    width: 220px;
+  }
+
   &__button {
     display: block;
     padding: 0.46em 0 0.46em 0;
@@ -50,6 +56,7 @@
   .release {
     &__image {
       width: 220px;
+      height: auto;
     }
   }
 }

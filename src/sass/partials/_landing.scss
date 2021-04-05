@@ -1,22 +1,24 @@
 @import './_variables';
+@import './_animations';
 
 .landing {
+  animation: fade 0.8s;
   background-image: $background-image;
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
 
   &__logo {
-    transition: 2s;
-    margin-top: 7rem;
+    margin-top: 10rem;
   }
 }
 
 @media screen and (max-width: 1300px) {
   .landing {
+    height: 100vh;
     &__logo {
       transition: 0.5s;
       max-width: 500px;

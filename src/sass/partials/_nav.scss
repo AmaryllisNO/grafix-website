@@ -1,10 +1,12 @@
 .header {
   width: 100%;
+  height: $header-height;
+  position: fixed;
+  z-index: 999;
 }
 
 .nav {
   padding-top: 1em;
-  transition: 0.5s;
   &__list {
     &item {
       display: inline-block;
@@ -33,5 +35,11 @@
         color: $grafix-red;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1300x) {
+  .header {
+    height: $header-height-smaller;
   }
 }

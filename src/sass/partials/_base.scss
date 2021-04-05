@@ -18,6 +18,8 @@
 
 html {
   background-color: black;
+  overflow: hidden;
+  max-height: 100vh;
 }
 
 body {
@@ -55,6 +57,10 @@ a {
   background: transparent;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+a:visited {
+  color: $grafix-gray;
 }
 
 img {
