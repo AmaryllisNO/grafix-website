@@ -3,14 +3,9 @@ import releaseImageTemp from '../assets/images/release.png';
 const Release = ({ release, releaseImage }) => {
   const baseUrl = 'http://localhost:1337';
 
-  console.log(release);
-  console.log(releaseImage);
-
   const imageUrl = baseUrl + releaseImage;
-  console.log(imageUrl);
-  console.log(release.release_date.toString());
+
   let releaseDate = new Date(release.release_date);
-  console.log(releaseDate);
 
   return (
     <div className='release'>
