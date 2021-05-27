@@ -28,7 +28,7 @@ const Home = () => {
 
         if (res.status === 200) {
           setRelease(res.data);
-          setReleaseImage(res.data.release_image);
+          setReleaseImage(res.data.image_url);
           console.log('call successful');
         }
       } catch (error) {
