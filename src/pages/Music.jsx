@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Heading from '../components/Heading';
+import Footer from '../components/Footer';
 
 const Music = () => {
   document.title = 'Grafix | Music';
@@ -8,6 +9,16 @@ const Music = () => {
     <div>
       <Header />
       <Heading title={pageHeading} />
+      <iframe
+        src='https://open.spotify.com/embed/artist/27YdXZOMLqvxI2pB5GyqyY'
+        height='380'
+        width='600'
+        frameborder='0'
+        allowtransparency='true'
+        allow='encrypted-media'
+        className='wrapper iframe'
+      ></iframe>
+      <Footer />
     </div>
   );
 };

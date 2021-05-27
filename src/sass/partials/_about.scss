@@ -1,0 +1,18 @@
+.about {
+  &__container {
+    display: flex;
+  }
+  &__image {
+    float: right;
+    max-width: 400px;
+  }
+
+  &__text,
+  &__imagecontainer {
+    margin-right: 5em;
+  }
+
+  &__paragraph {
+    margin-bottom: 1em;
+  }
+}

@@ -1,12 +1,6 @@
 import releaseImageTemp from '../assets/images/release.png';
 
 const Release = ({ release, releaseImage }) => {
-  const baseUrl = 'http://localhost:1337';
-
-  const imageUrl = baseUrl + releaseImage;
-
-  let releaseDate = new Date(release.release_date);
-
   return (
     <div className='release'>
       <div className='release__head '>
@@ -14,12 +8,16 @@ const Release = ({ release, releaseImage }) => {
         <span className='release__date'>{release.release_date}</span>
       </div>
       <div className='release__body'>
-        <img className='release__image' src={imageUrl} alt='' />
+        <img
+          className='release__image'
+          src={releaseImage}
+          alt={release.title}
+        />
         <div className='release__content'>
           <h3 className='release__title'>{release.title}</h3>
           <p className='release__text'>{release.description}</p>
           <div className='release__buttoncontainer'>
-            <a className='release__button' href='/'>
+            <a className='release__button' href={release.button_url}>
               Listen
             </a>
           </div>

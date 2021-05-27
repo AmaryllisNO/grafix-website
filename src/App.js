@@ -8,7 +8,7 @@ import Music from './pages/Music';
 import Tour from './pages/Tour';
 import Livestreams from './pages/Livestreams';
 import Contact from './pages/Contact';
-import Admin from './pages/Admin';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route path='/Tour' component={Tour} />
             <Route path='/livestreams' component={Livestreams} />
             <Route path='/contact' component={Contact} />
-            <Route path='/admin' component={Admin} />
+            <Route path='/login' component={Login} />
           </Switch>
         </Router>
       </div>

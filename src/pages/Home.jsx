@@ -5,6 +5,9 @@ import grafix_logo from '../assets/svg/grafix-logo.svg';
 import Header from '../components/Header';
 import Release from '../components/Release';
 import Footer from '../components/Footer';
+import { BASE_URL, LATEST_RELEASE_PATH } from '../utils/constants';
+
+console.log(`${BASE_URL}${LATEST_RELEASE_PATH}`);
 
 const Home = () => {
   document.title = 'Grafix';
@@ -21,11 +24,11 @@ const Home = () => {
         if (loading) {
           console.log('loading..');
         }
-        const res = await axios.get('http://localhost:1337/latest-release');
+        const res = await axios.get(`${BASE_URL}${LATEST_RELEASE_PATH}`);
 
         if (res.status === 200) {
           setRelease(res.data);
-          setReleaseImage(res.data.release_image.url);
+          setReleaseImage(res.data.release_image);
           console.log('call successful');
         }
       } catch (error) {
@@ -37,6 +40,10 @@ const Home = () => {
     };
     fetchRelease();
   }, []);
+
+  console.log(release);
+
+  console.log(releaseImage);
 
   if (loading) {
     return (
