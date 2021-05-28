@@ -1,6 +1,7 @@
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
+  overflow: hidden;
 
   &--fade {
     animation: fade 0.8s;

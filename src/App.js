@@ -1,3 +1,4 @@
+import 'simplebar/dist/simplebar.min.css';
 import './sass/main.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { IconContext } from 'react-icons';

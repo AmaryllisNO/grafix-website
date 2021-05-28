@@ -7,10 +7,27 @@ import {
   FaSpotify,
   FaSoundcloud,
 } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const [footer, setFooter] = useState(false);
+
+  const usePathname = () => {
+    const location = useLocation();
+    return location.pathname;
+  };
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === '/livestreams') {
+      setFooter(true);
+    }
+  });
+
   return (
-    <div className='footer'>
+    <div className={footer ? 'footer footer--active' : 'footer'}>
       <div className='footer__socials wrapper'>
         <ul className='footer__sociallist'>
           <li className='footer__socialitem'>

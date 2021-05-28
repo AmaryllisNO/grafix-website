@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,15 +9,23 @@ const Header = () => {
     return location.pathname;
   };
 
-  const changeBackground = () => {
-    if (window.scrollY >= 30) {
+  const pathname = usePathname();
+  console.log(pathname);
+  useEffect(() => {
+    if (pathname !== '/') {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
+  }, []);
+
+  /* const changeBackground = () => {
+    if (window.scrollY >= 30) {
+      setNavbar(true);
+    }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', changeBackground); */
 
   return (
     <div className='header'>

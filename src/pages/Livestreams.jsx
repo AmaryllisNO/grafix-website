@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Footer from '../components/Footer';
+import SimpleBar from 'simplebar-react';
 import { useState, useEffect } from 'react';
 import { YOUTUBE_API_KEY } from '../utils/constants';
 console.log(YOUTUBE_API_KEY);
@@ -39,46 +40,49 @@ export const Livestreams = () => {
     return (
       <div>
         <Header />
-        <Heading title={pageHeading} />
-        <div className='wrapper'>
-          {videoItems[0] ? (
-            <li>
-              <iframe
-                width='100%'
-                height='600'
-                src={`https://www.youtube.com/embed/${videoItems[0].snippet.resourceId.videoId}`}
-                title='YouTube video player'
-                frameBorder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-              ></iframe>
-            </li>
-          ) : (
-            ''
-          )}
+        <SimpleBar style={{ maxHeight: 900 }}>
+          <Heading title={pageHeading} />
 
-          <ul className='grid'>
-            {apiData.items.slice(1).map((item) => {
-              //console.log('item', item);
-              const { id, snippet = {} } = item;
-              const { title, resourceId } = snippet;
+          <div className='wrapper'>
+            {videoItems[0] ? (
+              <li>
+                <iframe
+                  width='100%'
+                  height='600'
+                  src={`https://www.youtube.com/embed/${videoItems[0].snippet.resourceId.videoId}`}
+                  title='YouTube video player'
+                  frameBorder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  allowFullScreen
+                ></iframe>
+              </li>
+            ) : (
+              ''
+            )}
 
-              return (
-                <li key={id}>
-                  <iframe
-                    width='100%'
-                    height='300'
-                    src={`https://www.youtube.com/embed/${resourceId.videoId}`}
-                    title='YouTube video player'
-                    frameBorder='0'
-                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                    allowFullScreen
-                  ></iframe>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+            <ul className='grid'>
+              {apiData.items.slice(1).map((item) => {
+                //console.log('item', item);
+                const { id, snippet = {} } = item;
+                const { title, resourceId } = snippet;
+
+                return (
+                  <li key={id}>
+                    <iframe
+                      width='100%'
+                      height='300'
+                      src={`https://www.youtube.com/embed/${resourceId.videoId}`}
+                      title='YouTube video player'
+                      frameBorder='0'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      allowFullScreen
+                    ></iframe>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </SimpleBar>
         <Footer />
       </div>
     );

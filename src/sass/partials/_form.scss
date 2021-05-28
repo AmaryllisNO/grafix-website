@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__button {
+    text-transform: uppercase;
+    background-color: $grafix-red;
+    max-width: 500px;
+    padding: 1rem;
+    background: $grafix-red;
+    border: none;
+    color: white;
+
+    outline: none;
+
+    margin-top: 5em;
+
+    &:active,
+    &:focus {
+      border-bottom: 2px $grafix-red solid;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.form > input,
+.form > textarea {
+  max-width: 500px;
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  border-bottom: 2px white solid;
+  outline: none;
+
+  &:active,
+  &:focus {
+    border-bottom: 2px $grafix-red solid;
+  }
+}
+
+.form textarea {
+  height: 200px;
+}

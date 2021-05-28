@@ -1,5 +1,3 @@
-import releaseImageTemp from '../assets/images/release.png';
-
 const Release = ({ release, releaseImage }) => {
   return (
     <div className='release'>

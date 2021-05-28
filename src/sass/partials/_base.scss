@@ -2,7 +2,7 @@
 
 .App {
   color: white;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 100vh;
 
   // overflow: hidden;
@@ -20,11 +20,14 @@ html {
   background-color: black;
   //overflow: hidden;
   max-height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 body {
   line-height: 1;
   font-family: 'Raleway', sans-serif;
+  scrollbar-width: none; /* Firefox */
 }
 
 h1,
