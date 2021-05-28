@@ -10,13 +10,14 @@ const Header = () => {
   };
 
   const pathname = usePathname();
-  console.log(pathname);
+
   useEffect(() => {
     if (pathname !== '/') {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /* const changeBackground = () => {

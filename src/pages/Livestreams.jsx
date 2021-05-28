@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import SimpleBar from 'simplebar-react';
 import { useState, useEffect } from 'react';
 import { YOUTUBE_API_KEY } from '../utils/constants';
-console.log(YOUTUBE_API_KEY);
 
 const YOUTUBE_PLAYLIST_ITEM_API =
   'https://www.googleapis.com/youtube/v3/playlistItems';
@@ -64,7 +63,7 @@ export const Livestreams = () => {
               {apiData.items.slice(1).map((item) => {
                 //console.log('item', item);
                 const { id, snippet = {} } = item;
-                const { title, resourceId } = snippet;
+                const { resourceId } = snippet;
 
                 return (
                   <li key={id}>
@@ -93,7 +92,7 @@ export const Livestreams = () => {
       <div>
         <Header />
         <Heading title={pageHeading} />
-        <div className='wrapper'>Could not load livestreams...</div>
+
         <Footer />
       </div>
     );

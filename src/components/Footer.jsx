@@ -24,7 +24,8 @@ const Footer = () => {
     if (pathname === '/livestreams') {
       setFooter(true);
     }
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className={footer ? 'footer footer--active' : 'footer'}>

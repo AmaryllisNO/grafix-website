@@ -7,8 +7,6 @@ import Release from '../components/Release';
 import Footer from '../components/Footer';
 import { BASE_URL, LATEST_RELEASE_PATH } from '../utils/constants';
 
-console.log(`${BASE_URL}${LATEST_RELEASE_PATH}`);
-
 const Home = () => {
   document.title = 'Grafix';
 
@@ -21,15 +19,12 @@ const Home = () => {
     const fetchRelease = async () => {
       try {
         setLoading(true);
-        if (loading) {
-          console.log('loading..');
-        }
+
         const res = await axios.get(`${BASE_URL}${LATEST_RELEASE_PATH}`);
 
         if (res.status === 200) {
           setRelease(res.data);
           setReleaseImage(res.data.image_url);
-          console.log('call successful');
         }
       } catch (error) {
         console.log(error);
@@ -40,10 +35,6 @@ const Home = () => {
     };
     fetchRelease();
   }, []);
-
-  console.log(release);
-
-  console.log(releaseImage);
 
   if (loading) {
     return (

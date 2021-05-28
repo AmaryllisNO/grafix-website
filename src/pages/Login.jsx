@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+/* import { useState, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
@@ -7,10 +7,10 @@ import Header from '../components/Header';
 import Heading from '../components/Heading';
 
 import AuthContext from '../context/AuthContext';
-import { BASE_URL, AUTH_PATH } from '../utils/constants';
+import { BASE_URL, AUTH_PATH } from '../utils/constants'; */
 
 const Login = () => {
-  const [, setAuth] = useContext(AuthContext);
+  /*  const [, setAuth] = useContext(AuthContext);
   const [submitting, setSubmitting] = useState(false);
 
   const history = useHistory();
@@ -46,7 +46,7 @@ const Login = () => {
       <Header />
       <Heading title={pageHeading} />
     </div>
-  );
+  ); */
 };
 
 export default Login;

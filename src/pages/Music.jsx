@@ -10,6 +10,7 @@ const Music = () => {
       <Header />
       <Heading title={pageHeading} />
       <iframe
+        title='music'
         src='https://open.spotify.com/embed/artist/27YdXZOMLqvxI2pB5GyqyY'
         height='380'
         width='600'
