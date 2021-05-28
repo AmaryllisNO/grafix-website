@@ -57,10 +57,12 @@ const Home = () => {
               alt='grafix logo'
             />
 
-            <div className='lds-facebook'>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div className='loader'>
+              <div className='lds-facebook'>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
           <Footer />

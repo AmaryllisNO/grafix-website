@@ -5,6 +5,12 @@
   &__image {
     float: right;
     max-width: 400px;
+    animation: fade 1.5s;
+  }
+
+  &__text {
+    word-spacing: 2px;
+    line-height: 18px;
   }
 
   &__text,

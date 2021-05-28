@@ -2,7 +2,8 @@ import Header from '../components/Header';
 import Heading from '../components/Heading';
 import Footer from '../components/Footer';
 
-import PressPhoto from '../assets/images/pressphoto1.jpg';
+import PressPhoto1 from '../assets/images/pressphoto1.jpg';
+import PressPhoto2 from '../assets/images/pressphoto2.jpg';
 
 const About = () => {
   document.title = 'Grafix | About';
@@ -12,7 +13,7 @@ const About = () => {
     <div className='about'>
       <Header />
       <Heading title={pageHeading} />
-      <div className='about__container wrapper'>
+      <div className='about__container wrapper wrapper--fade'>
         <div className='about__text'>
           <p className='about__paragraph'>
             Bristol based drum & bass producer Grafix has revitalized his solo
@@ -29,8 +30,8 @@ const About = () => {
             sets on his solo journey. His influences are drawn from various
             genres such as Techno, Electronica and Indie Dance. With his
             productions encompass this broad selection they span a range of
-            emotions and sonic frequencies.Grafix’s new solo status has seen him
-            venture into darker and more experimental territories with his
+            emotions and sonic frequencies. Grafix’s new solo status has seen
+            him venture into darker and more experimental territories with his
             dancefloor primed productions and ethereal soundscapes, proving
             popular, from ‘Distressed’ to ‘Stutter’ and ‘Acid Generation’ which
             reached number 1 in the Beatport Drum & Bass chart.{' '}
@@ -47,7 +48,18 @@ const About = () => {
           </p>
         </div>
         <div className='about__imagecontainer'>
-          <img src={PressPhoto} alt='' srcset='' className='about__image' />
+          <img
+            src={PressPhoto1}
+            alt='Grafix Pressphoto'
+            srcset=''
+            className='about__image'
+          />
+          <img
+            src={PressPhoto2}
+            alt='Grafix Pressphoto'
+            srcset=''
+            className='about__image'
+          />
         </div>
       </div>
 

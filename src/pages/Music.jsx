@@ -13,7 +13,7 @@ const Music = () => {
         src='https://open.spotify.com/embed/artist/27YdXZOMLqvxI2pB5GyqyY'
         height='380'
         width='600'
-        frameborder='0'
+        frameBorder='0'
         allowtransparency='true'
         allow='encrypted-media'
         className='wrapper iframe'

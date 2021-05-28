@@ -1,14 +1,27 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
+
   const usePathname = () => {
     const location = useLocation();
     return location.pathname;
   };
 
+  const changeBackground = () => {
+    if (window.scrollY >= 30) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
     <div className='header'>
-      <nav className='nav wrapper'>
+      <nav className={navbar ? 'nav nav--active wrapper' : 'nav wrapper'}>
         <ul className='nav__list'>
           {usePathname() === '/' ? (
             <li className='nav__listitem'>

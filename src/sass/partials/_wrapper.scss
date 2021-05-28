@@ -1,6 +1,10 @@
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
+
+  &--fade {
+    animation: fade 0.8s;
+  }
 }
 
 @media screen and (max-width: 1300px) {

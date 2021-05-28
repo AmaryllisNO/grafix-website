@@ -6,7 +6,17 @@
 }
 
 .nav {
-  padding-top: 1em;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+
+  &--active {
+    background-color: rgb(0, 0, 0);
+    transition: 0.8s;
+  }
+
   &__list {
     &item {
       display: inline-block;

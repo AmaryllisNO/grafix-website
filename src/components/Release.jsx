@@ -5,7 +5,7 @@ const Release = ({ release, releaseImage }) => {
     <div className='release'>
       <div className='release__head '>
         <h2 className='release__heading'>Latest Release</h2>
-        <span className='release__date'>{release.release_date}</span>
+        <span className='release__date'>{release.date}</span>
       </div>
       <div className='release__body'>
         <img
@@ -17,7 +17,12 @@ const Release = ({ release, releaseImage }) => {
           <h3 className='release__title'>{release.title}</h3>
           <p className='release__text'>{release.description}</p>
           <div className='release__buttoncontainer'>
-            <a className='release__button' href={release.button_url}>
+            <a
+              className='release__button'
+              href={release.button_url}
+              target='_blank'
+              rel='noreferrer noopener'
+            >
               Listen
             </a>
           </div>

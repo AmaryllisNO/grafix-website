@@ -1,10 +1,12 @@
-import { FaTwitter } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
-import { FaYoutube } from 'react-icons/fa';
-import { FaTwitch } from 'react-icons/fa';
-import { FaSpotify } from 'react-icons/fa';
-import { FaSoundcloud } from 'react-icons/fa';
+import {
+  FaTwitter,
+  FaInstagram,
+  FaFacebook,
+  FaYoutube,
+  FaTwitch,
+  FaSpotify,
+  FaSoundcloud,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
