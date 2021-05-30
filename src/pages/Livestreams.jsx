@@ -29,9 +29,6 @@ export const Livestreams = () => {
   document.title = 'Grafix | Live Streams';
   let pageHeading = document.title.replace('Grafix |', '');
 
-  console.log(apiData);
-  console.log(videoItems[0]);
-
   /* setVideoItems(apiData.items);
   console.log(videoItems); */
 

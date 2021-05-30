@@ -29,6 +29,7 @@
 @media screen and (max-width: 900px) {
   .landing {
     background-image: $background-image-mobile;
+    background-position: center;
     &__logo {
       transition: 0.5s;
       max-width: 300px;

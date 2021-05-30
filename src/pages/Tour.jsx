@@ -26,7 +26,7 @@ const Tour = () => {
       <div className='wrapper'>
         <a
           href='https://www.songkick.com/artists/2165055'
-          class='songkick-widget'
+          className='songkick-widget'
           data-theme='dark'
           data-track-button='on'
           data-detect-style='true'
