@@ -60,3 +60,40 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .release {
+    width: 100%;
+    margin-left: -2em;
+    display: absolute;
+    width: 100vw;
+    padding: 2em;
+    background-color: black;
+
+    &__body {
+      display: block;
+      grid-template-columns: 15em auto;
+    }
+
+    &__heading {
+      padding-top: 0.5em;
+      padding-bottom: 0;
+    }
+
+    &__title {
+      margin-bottom: 0.2em;
+    }
+
+    &__date {
+      margin: 0;
+    }
+
+    &__image {
+      padding: 1em 0 1em 0;
+    }
+
+    &__buttoncontainer {
+      padding-top: 1em;
+    }
+  }
+}

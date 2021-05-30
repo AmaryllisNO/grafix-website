@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Hamburger from '../assets/svg/Hamburger.svg';
 import Cross from '../assets/svg/Cross.svg';
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(false);
+  //const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(false);
 
   const usePathname = () => {
@@ -12,16 +12,16 @@ const Header = () => {
     return location.pathname;
   };
 
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
-  useEffect(() => {
+  /*  useEffect(() => {
     if (pathname !== '/') {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, []); */
 
   return (
     <>

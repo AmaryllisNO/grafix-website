@@ -25,3 +25,17 @@
     color: white;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 0;
+    height: 60px;
+    z-index: 999;
+    width: 85%;
+    font-size: 0.8em;
+
+    &__socials {
+      padding-right: 0;
+    }
+  }
+}
