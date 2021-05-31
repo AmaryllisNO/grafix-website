@@ -1,48 +1,66 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
+  max-width: 450px;
+  position: relative;
 
   &__button {
     text-transform: uppercase;
+    text-align: center;
     background-color: $grafix-red;
-    max-width: 500px;
+    font-size: 0.9em;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    min-width: 200px;
+    align-self: center;
     padding: 1rem;
-    background: $grafix-red;
-    border: none;
+    background: none;
+    border: 1px solid white;
     color: white;
+    border-radius: 1px;
 
     outline: none;
 
     margin-top: 5em;
+    transition: 0.3s;
 
     &:active,
     &:focus {
-      border-bottom: 2px $grafix-red solid;
+      border: 2px $grafix-red solid;
+      transition: 0.3s;
     }
 
     &:hover {
       cursor: pointer;
+      background: $grafix-red;
+      transition: 0.3s;
+      border: 1px $grafix-red solid;
     }
   }
 }
 
 .form > input,
 .form > textarea {
-  max-width: 500px;
-  padding: 1rem;
-  background: none;
+  padding: 0.9rem;
+  background: white;
   border: none;
-  color: white;
-  border-bottom: 2px white solid;
+  color: black;
+  // border-bottom: 2px white solid;
   outline: none;
+  margin-bottom: 2em;
+  border-radius: 1px;
 
-  &:active,
+  /* &:active,
   &:focus {
     border-bottom: 2px $grafix-red solid;
-  }
+  } */
 }
 
 .form textarea {
   height: 200px;
+}
+
+.form label {
+  padding-bottom: 0.8em;
 }

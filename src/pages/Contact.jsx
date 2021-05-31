@@ -10,36 +10,49 @@ const Contact = () => {
     <div>
       <Header />
       <Heading title={pageHeading} />
-      <form
-        action='https://formsubmit.co/amaryllisno@gmail.com'
-        method='POST'
-        className='form wrapper'
-      >
-        <input
-          type='text'
-          placeholder='Name'
-          name='name'
-          required
-          className='form__input'
-        />
-        <input
-          type='email'
-          placeholder='Email Address'
-          name='email'
-          required
-          className='form__input'
-        />
-        <textarea
-          type='text'
-          name='message'
-          placeholder='Your message...'
-          required
-          className='form__input'
-        />
-        <button type='submit' className='form__button'>
-          Send
-        </button>
-      </form>
+      <div className='wrapper'>
+        <form
+          action='https://formsubmit.co/amaryllisno@gmail.com'
+          method='POST'
+          className='form'
+        >
+          <label htmlFor='name'>Name *</label>
+          <input
+            type='text'
+            placeholder='Name'
+            name='name'
+            required
+            className='form__input'
+          />
+          <label htmlFor='email'>E-mail *</label>
+          <input
+            type='email'
+            placeholder='Email Address'
+            name='email'
+            required
+            className='form__input'
+          />
+          <label htmlFor='subject'>Subject *</label>
+          <input
+            type='subject'
+            placeholder='Subject Address'
+            name='subject'
+            required
+            className='form__input'
+          />
+          <label htmlFor='message'>Message *</label>
+          <textarea
+            type='text'
+            name='message'
+            placeholder='Your message...'
+            required
+            className='form__input'
+          />
+          <button type='submit' className='form__button'>
+            Send
+          </button>
+        </form>
+      </div>
       <Footer />
     </div>
   );
