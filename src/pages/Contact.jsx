@@ -12,7 +12,7 @@ const Contact = () => {
       <Heading title={pageHeading} />
       <div className='wrapper'>
         <form
-          action='https://formsubmit.co/amaryllisno@gmail.com'
+          action='https://formsubmit.co/info@grafixmusic.com'
           method='POST'
           className='form'
         >
