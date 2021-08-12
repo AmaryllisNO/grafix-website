@@ -4,6 +4,8 @@
   justify-content: left;
   max-width: 450px;
   position: relative;
+  transform-origin: top left;
+  transform: scale(0.8);
 
   &__button {
     text-transform: uppercase;
