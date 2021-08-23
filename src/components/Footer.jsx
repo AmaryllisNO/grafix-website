@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <div className={footer ? 'footer footer--active' : 'footer'}>
-      <div className='footer__socials wrapper'>
+      <div className='footer__socials'>
         <ul className='footer__sociallist'>
           <li className='footer__socialitem'>
             <a
