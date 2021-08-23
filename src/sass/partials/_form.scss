@@ -24,7 +24,8 @@
 
     outline: none;
 
-    margin-top: 5em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
     transition: 0.3s;
 
     &:active,
@@ -65,4 +66,10 @@
 
 .form label {
   padding-bottom: 0.8em;
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    transform: scale(1);
+  }
 }
