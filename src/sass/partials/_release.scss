@@ -1,5 +1,7 @@
 .release {
   max-width: 800px;
+  z-index: 9999;
+  position: relative;
 
   animation: fade 2s ease;
 
@@ -63,6 +65,7 @@
 
 @media screen and (max-width: 900px) {
   .release {
+    z-index: 9999;
     width: 100%;
     margin-left: -2em;
     display: absolute;
