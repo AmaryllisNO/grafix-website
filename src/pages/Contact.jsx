@@ -35,7 +35,7 @@ const Contact = () => {
           <label htmlFor='subject'>Subject *</label>
           <input
             type='subject'
-            placeholder='Subject Address'
+            placeholder='Subject'
             name='subject'
             required
             className='form__input'

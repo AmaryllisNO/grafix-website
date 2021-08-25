@@ -31,8 +31,10 @@
 
 @media screen and (max-width: 900px) {
   .footer {
+    position: fixed;
+    z-index: 902;
     padding: 0;
-    width: 100%;
+    width: 80vw;
     font-size: 0.8em;
     margin-left: 0;
 
